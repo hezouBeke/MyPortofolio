@@ -25,7 +25,7 @@ const Header = () => {
     <Navbar />
   
     </div>
-     <a href="#contact" className="btn btn-secondary max-md:hidden">
+     <a href="#contact" className="btn btn-secondary max-md:hidden md:justify-self-end">
       Contact Me
     </a>
     </div>
