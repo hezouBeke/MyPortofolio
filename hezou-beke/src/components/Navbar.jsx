@@ -1,6 +1,6 @@
 import { useRef } from 'react';
 
-const Navbar = () => {
+const Navbar = ({ navOpen }) => {
     const lastActiveLink = useRef();
     const navItems = [
         {
