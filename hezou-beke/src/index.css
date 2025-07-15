@@ -15,5 +15,5 @@ body {
 }
 
 .navabar{
-    @apply absolute top-full mt-2 right-0
+    @apply absolute top-full mt-2 right-0 min-w-40
 }
