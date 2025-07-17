@@ -1,5 +1,5 @@
 import { useRef } from 'react';
-import Proptypes from "prop-types";
+import PropTypes from "prop-types";
 
 const Navbar = ({ navOpen }) => {
     const lastActiveLink = useRef();
@@ -51,4 +51,7 @@ const Navbar = ({ navOpen }) => {
     );
 }
 
+Navbar.PropTypes ={
+    navOpen: PropTypes.bool.isRequired
+}
 export default Navbar;
