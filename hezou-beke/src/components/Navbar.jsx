@@ -1,4 +1,5 @@
 import { useRef } from 'react';
+import Proptypes from "prop-types";
 
 const Navbar = ({ navOpen }) => {
     const lastActiveLink = useRef();
