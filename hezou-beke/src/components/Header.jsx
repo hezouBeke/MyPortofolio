@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from './Navbar'
+import { useState } from 'react'
 const Header = () => {
   return (
    <header className="fixed top-0 left-0 w-full h-20 flex items-center z-40 bg-gradient-to-b from-zinc-900 to-zinc-900/0">
@@ -22,7 +23,7 @@ const Header = () => {
       menu
       </span> 
     </button>
-    <Navbar />
+    <Navbar navOpen={}/>
   
     </div>
      <a href="#contact" className="btn btn-secondary max-md:hidden md:justify-self-end">
