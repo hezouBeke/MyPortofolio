@@ -14,11 +14,11 @@ body {
     rounded-xl ring-inset ring-1 ring-zinc-50/[0.02] backdrop-blur-2xl hover:bg-zinc-50/15 transition-[transform,background-color] active:scale-95
 }
 
-.navabar{
-    @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-40/50
+.navbar {
+    @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-400/50
     rounded-2xl ring-inset ring-1 ring-zinc-50/5 scale-90 isolate blur-sm opacity-0 invisible 
     transition-[opacity,transform,filter]
 }
-.navabar.active {
+.navbar.active {
     @apply opacity-100 scale-100 blur-0 visible
 }
