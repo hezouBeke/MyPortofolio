@@ -28,10 +28,12 @@ body {
      tracking-wide text-zinc-50/50 hover:text-zinc-50
      transition-colors
 }
-.nav-link.active{
+.nav-link.active {
     @apply text-zinc-900 duration-500
 }
+
 .navbar .active-box {
-    @apply absolute  bg-zinc-50 rounded-lg -z-10
-    translate-[top,left] duration-500
+    @apply absolute bg-zinc-50 rounded-lg -z-10
+           duration-500;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y));
 }
