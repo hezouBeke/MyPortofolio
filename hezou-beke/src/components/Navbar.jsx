@@ -14,8 +14,8 @@ const Navbar = ({ navOpen }) => {
     }
     useEffect(initActiveBox, []);
     const activeCurrentLink = (event) => {
-        lastActiveLink.current?.classlist.remove('active');
-        event.target.classlist.add('active');
+        lastActiveLink.current?.classList.remove('active');
+        event.target.classList.add('active')
 
     }
     const navItems = [
@@ -49,7 +49,7 @@ const Navbar = ({ navOpen }) => {
 
     return (
         <div>
-               <nav className={'navbar' + (navOpen ? 'active' : '')}>
+              <nav className={`navbar ${navOpen ? ' active' : ''}`}>
                 {navItems.map(({ label, link, className, ref }, key) => (
                     <a 
                         href={link}
@@ -61,6 +61,11 @@ const Navbar = ({ navOpen }) => {
                         {label}
                     </a>
                 ))}
+                <div
+                    className="active-box"
+                    ref={activeBox}
+                    >
+                </div>
             </nav>
         </div>
     );

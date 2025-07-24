@@ -16,7 +16,7 @@ body {
 
 .navbar {
     @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-400/50
-    rounded-2xl ring-inset ring-1 ring-zinc-50/5 scale-90 isolate blur-sm opacity-0 invisible 
+    rounded-2xl ring-inset ring-1 ring-zinc-50/5 scale-90 isolate blur-sm opacity-0 invisible backdrop-blur-md bg-zinc-800/50  
     transition-[opacity,transform,filter]
 }
 .navbar.active {
@@ -31,9 +31,7 @@ body {
 .nav-link.active {
     @apply text-zinc-900 duration-500
 }
-
 .navbar .active-box {
-    @apply absolute bg-zinc-50 rounded-lg -z-10
-           duration-500;
-    transform: translate(var(--tw-translate-x), var(--tw-translate-y));
+    @apply absolute bg-zinc-50 rounded-lg -z-10 duration-500;
+    transform: translate(0px, 0px); /* Va être modifié dynamiquement par JS */
 }
