@@ -15,9 +15,13 @@ body {
 }
 
 .navbar {
-    @apply absolute top-full mt-2 right-0 min-w-40 p-2 bg-zinc-400/50
-    rounded-2xl ring-inset ring-1 ring-zinc-50/5 scale-90 isolate blur-sm opacity-0 invisible backdrop-blur-md bg-zinc-800/50  
-    transition-[opacity,transform,filter]
+    @apply absolute top-full mt-2 right-0 min-w-40 p-2 
+           bg-zinc-800/50 rounded-2xl ring-1 ring-inset ring-zinc-50/5 
+           scale-90 opacity-0 invisible blur-sm
+           transition-all duration-300 backdrop-blur-md
+           md:static md:flex md:items-center md:gap-6
+           md:mt-0 md:opacity-100 md:blur-0 md:visible md:scale-100 
+           md:bg-transparent md:ring-0 md:backdrop-blur-0;
 }
 .navbar.active {
     @apply opacity-100 scale-100 blur-0 visible

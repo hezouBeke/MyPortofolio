@@ -19,9 +19,9 @@ const Navbar = ({ navOpen }) => {
         lastActiveLink.current = event.target;
 
        activeBox.current.style.top = event.target.offsetTop + 'px';
-       activeBox.current.style.left = event.target.offsetTop .offsetLeft + 'px';
-       activeBox.current.style.width = event.target.offsetTop .offsetWidth + 'px';
-       activeBox.current.style.height = event.target.offsetTop .offsetHeight + 'px';
+       activeBox.current.style.left = event.target.offsetLeft + 'px';
+       activeBox.current.style.width = event.target.offsetWidth + 'px';
+       activeBox.current.style.height = event.target.offsetHeight + 'px';
     }
     const navItems = [
         {
