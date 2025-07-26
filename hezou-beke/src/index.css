@@ -8,6 +8,13 @@ html {
 body {
     @apply bg-zinc-900 text-zinc-50 
 }
+@layer utilities {
+  .material-symbols-rounded {
+    @apply w-[1em] h-[1em] overflow-hidden;
+    font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+  }
+}
+
 
 .menu-btn {
     @apply w-10 h-10 grid place-items-center bg-zinc-50/10
@@ -40,3 +47,11 @@ body {
     transform: translate(0px, 0px); 
 }
  
+.btn {
+    @apply max-w-max h-9 flex items-center gap-2 px-4
+    rounded-xl font-medium text-sm ring-1 ring-zinc-50/5 
+    ring-inset transition-[background-color]
+}
+.btn-secondary{
+    @apply bg-zinc-50 text-zinc-900 active:bg-zinc-50/80
+}
