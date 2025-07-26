@@ -13,7 +13,7 @@ const Navbar = ({ navOpen }) => {
        activeBox.current.style.height = lastActiveLink.current.offsetHeight + 'px';
     }
     useEffect(initActiveBox, []);
-    window.addEventListener('resize', initActiveBox)
+    // window.addEventListener('resize', initActiveBox)
   const activeCurrentLink = (event) => {
         lastActiveLink.current?.classList.remove('active');
         event.target.classList.add('active');
