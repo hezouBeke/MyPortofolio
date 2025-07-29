@@ -19,10 +19,10 @@ const Navbar = ({ navOpen }) => {
         event.target.classList.add('active');
         lastActiveLink.current = event.target;
 
-    //    activeBox.current.style.top = event.target.offsetTop + 'px';
-    //    activeBox.current.style.left = event.target.offsetLeft + 'px';
-    //    activeBox.current.style.width = event.target.offsetWidth + 'px';
-    //    activeBox.current.style.height = event.target.offsetHeight + 'px';
+       activeBox.current.style.top = event.target.offsetTop + 'px';
+       activeBox.current.style.left = event.target.offsetLeft + 'px';
+       activeBox.current.style.width = event.target.offsetWidth + 'px';
+       activeBox.current.style.height = event.target.offsetHeight + 'px';
     }
     const navItems = [
         {
