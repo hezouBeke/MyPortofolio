@@ -14,9 +14,15 @@ const Hero = () => {
                   <img src="/images/avatar-1.jpg"
                   width={40}
                   height={40}
-                   alt=""
+                  alt="beke hezou portrait"
+                  className='image-cover'
                     /> 
                   </figure>
+                  <div className=''>
+                   <span className=''>
+
+                   </span>
+                  </div>
                 </div>
             </div>
             
