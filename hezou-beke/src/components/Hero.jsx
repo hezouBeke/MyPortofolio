@@ -11,7 +11,11 @@ const Hero = () => {
             <div>
                 <div className=''>
                   <figure>
-                  <img src="" alt="" /> 
+                  <img src="/images/avatar-1.jpg"
+                  width={40}
+                  height={40}
+                   alt=""
+                    /> 
                   </figure>
                 </div>
             </div>
