@@ -9,7 +9,11 @@ const Hero = () => {
         <div className=''>
 
             <div>
-                
+                <div className=''>
+                  <figure>
+                  <img src="" alt="" /> 
+                  </figure>
+                </div>
             </div>
             
         </div>
