@@ -19,9 +19,9 @@ const Hero = () => {
                     /> 
                   </figure>
                   <div className=''>
-                   <span className=''>
+                   {/* <span className=''>
 
-                   </span>
+                   </span> */}
                   </div>
                 </div>
             </div>
