@@ -20,10 +20,14 @@ const Hero = () => {
                   </figure>
                   <div className=''>
                    <span className=''>
-
+                    <span className=''></span>
                    </span>
+                    Available for work
                   </div>
                 </div>
+                <h2 className="">
+                  Building Scalable Modern Websites for the Future
+                </h2>
             </div>
             
         </div>
