@@ -5,11 +5,11 @@ const Hero = () => {
   <section
    id="home"
    className="pt-28 lg:pt-36">
-        <div className="container lg:grid lg:grid-cols-2 items-center">
+        <div className="container lg:grid lg:grid-cols-2 items-center lg:gap-10">
 
             <div>
-                <div className=''>
-                  <figure>
+                <div className="flex items-center">
+                  <figure className="img-box w-9 h-* rounded-lg"> 
                   <img src="/images/avatar-1.jpg"
                   width={40}
                   height={40}
