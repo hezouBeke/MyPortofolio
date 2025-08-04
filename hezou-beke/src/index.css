@@ -19,7 +19,13 @@ body {
     @apply px-4 mx-auto  lg:px-8 xl:max-w-6xl;
 }
 
+.img-box {
+    @apply bg-zinc-700 overflow-hidden;
+}
 
+.img-cover {
+   @apply w-full h-full object-cover
+}
 
 
 .menu-btn {
