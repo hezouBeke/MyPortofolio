@@ -28,6 +28,11 @@ const Hero = () => {
                 <h2 className="">
                   Building Scalable Modern Websites for the Future
                 </h2>
+                <div className="">
+                  ButtonPrimary 
+
+                  buttonOutline
+                </div>
             </div>
             
         </div>
