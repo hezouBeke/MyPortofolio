@@ -2,11 +2,10 @@ import React from 'react'
 
 const Hero = () => {
   return (
-    <section 
-    className=''
-    id='home'
-    >
-        <div className=''>
+  <section
+   id="home"
+   className="pt-28 lg:pt-36">
+        <div className="container lg:grid lg:grid-cols-2 items-center">
 
             <div>
                 <div className=''>
@@ -34,7 +33,17 @@ const Hero = () => {
                   buttonOutline
                 </div>
             </div>
-            
+          <div className="">
+            <figure className="">
+              <img
+              src="/images/hero-banner.png" 
+              width={656}
+              height={800}
+              alt="hèzou beke" 
+              className="w-full" 
+              />
+            </figure>
+          </div>
         </div>
         
     </section>
