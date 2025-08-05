@@ -27,7 +27,7 @@ const Hero = () => {
                     Available for work
                   </div>
                 </div>
-                <h2 className="">
+                <h2 className="headline-1">
                   Building Scalable Modern Websites for the Future
                 </h2>
                 <div className="">
