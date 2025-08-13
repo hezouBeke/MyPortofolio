@@ -27,7 +27,7 @@ const Hero = () => {
                     Available for work
                   </div>
                 </div>
-                <h2 className="headline-1">
+                <h2 className="headline-1 max-w-[15ch] sm:max-w-[20ch]">
                   Building Scalable Modern Websites for the Future
                 </h2>
                 <div className="">
