@@ -31,8 +31,11 @@ const Hero = () => {
                   Building Scalable Modern Websites for the Future
                 </h2>
                 <div className="flex items-center gap-3">
-                  <ButtonPrimary />
-                  
+                  <ButtonPrimary
+                  label="Download CV"
+                  icon="download"
+                  />
+
                   buttonOutline
                 </div>
             </div>
