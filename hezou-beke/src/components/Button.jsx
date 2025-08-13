@@ -1,11 +1,23 @@
 import React from 'react'
+import PropTypes from 'prop-types';
 
-const Button = () => {
+
+
+const ButtonPrimary = ({
+  href,
+  target='_self',
+  label,
+  icon,
+  classes,
+
+}) => {
   return (
     <div>
-      
+      Button
     </div>
   )
 }
 
-export default Button
+export {
+    ButtonPrimary
+}
