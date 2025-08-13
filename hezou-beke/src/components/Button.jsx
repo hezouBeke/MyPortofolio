@@ -27,13 +27,14 @@ const ButtonPrimary = ({
       : undefined 
     }
     </a>
- ) else {
+ ) 
+} else {
     return (
     <button></button>
     )
  }
    }
-}
+
 ButtonPrimary.protoTypes = {
  label: PropTypes.string.isRequired,
  href: PropTypes.string,
