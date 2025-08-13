@@ -30,10 +30,20 @@ const ButtonPrimary = ({
  ) 
 } else {
     return (
-    <button></button>
+    <button className={"btn btn-primary" + classes }>
+        {label}
+        {icon ?
+      <span className="material-symbols-rounded"
+      aria-hidden="true">
+       {icon}
+      </span>
+      : undefined 
+    }
+    </button>
     )
  }
-   }
+
+}
 
 ButtonPrimary.protoTypes = {
  label: PropTypes.string.isRequired,
