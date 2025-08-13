@@ -17,7 +17,13 @@ const ButtonPrimary = ({
     </div>
   )
 }
-
+ButtonPrimary.protoTypes = {
+ label: PropTypes.string.isRequired,
+ href: PropTypes.string,
+ target: PropTypes.string,
+ icon: PropTypes.string,
+ classes: PropTypes.string,
+}
 export {
     ButtonPrimary
 }
