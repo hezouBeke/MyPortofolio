@@ -84,7 +84,7 @@ body {
 .btn:has( .material-symbols-rounded ) {
     @apply pr-3
 }
-/* 
+
 .btn-primary {@apply h-11 bg-sky-400 text-zinc-950 hover:bg-sky-300
   active:bg-sky-400
-} */
+}
