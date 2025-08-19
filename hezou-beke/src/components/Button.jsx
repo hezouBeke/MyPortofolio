@@ -1,57 +1,51 @@
 import React from 'react'
 import PropTypes from 'prop-types';
 
-
-
 const ButtonPrimary = ({
   href,
-  target='_self',
+  target = '_self',
   label,
   icon,
-  classes,
-
+  classes = '', // Valeur par défaut pour éviter "undefined"
 }) => {
 
-   if(href) {
- return(
-    <a href={href}
-    target={target}
-    className={"btn btn-primary " + classes}>
-    {label}
-    
-    {icon ?
-      <span className="material-symbols-rounded"
-      aria-hidden="true">
-       {icon}
-      </span>
-      : undefined 
-    }
-    </a>
- ) 
-} else {
+  const className = `btn btn-primary ${classes}`.trim();
+
+  if (href) {
     return (
-    <button className={"btn btn-primary" + classes }>
+      <a href={href}
+         target={target}
+         className={className}>
         {label}
-        {icon ? 
-      <span className="material-symbols-rounded"
-      aria-hidden="true">
-       {icon}
-      </span>
-      : undefined 
-    }
-    </button>
+        {icon && (
+          <span className="material-symbols-rounded" aria-hidden="true">
+            {icon}
+          </span>
+        )}
+      </a>
+    ) 
+  } else {
+    return (
+      <button className={className}>
+        {label}
+        {icon && (
+          <span className="material-symbols-rounded" aria-hidden="true">
+            {icon}
+          </span>
+        )}
+      </button>
     )
- }
-
+  }
 }
 
-ButtonPrimary.protoTypes = {
- label: PropTypes.string.isRequired,
- href: PropTypes.string,
- target: PropTypes.string,
- icon: PropTypes.string,
- classes: PropTypes.string,
+ButtonPrimary.propTypes = { // Correction de la typo
+  label: PropTypes.string.isRequired,
+  href: PropTypes.string,
+  target: PropTypes.string,
+  icon: PropTypes.string,
+  classes: PropTypes.string,
 }
+
 export {
-    ButtonPrimary
+  ButtonPrimary
 }
