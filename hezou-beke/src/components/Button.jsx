@@ -32,7 +32,7 @@ const ButtonPrimary = ({
     return (
     <button className={"btn btn-primary" + classes }>
         {label}
-        {icon ?
+        {icon ? 
       <span className="material-symbols-rounded"
       aria-hidden="true">
        {icon}

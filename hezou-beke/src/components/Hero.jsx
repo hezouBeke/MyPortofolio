@@ -36,7 +36,7 @@ const Hero = () => {
                   icon="download"
                   />
 
-                  buttonOutline
+                  {/* buttonOutline */}
                 </div>
             </div>
           <div className="hidden lg:block">
