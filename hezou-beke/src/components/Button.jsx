@@ -54,10 +54,10 @@ const ButtonOutline = ({
   target = '_self',
   label,
   icon,
-  classes = '', // Valeur par défaut pour éviter "undefined"
+  classes = '', 
 }) => {
 
-  const className = `btn btn-primary ${classes}`.trim();
+  const className = `btn btn-outline ${classes}`.trim();
 
   if (href) {
     return (
