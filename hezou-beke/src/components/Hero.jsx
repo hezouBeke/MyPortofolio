@@ -1,5 +1,5 @@
 import React from 'react'
-import { ButtonPrimary } from './Button'
+import { ButtonPrimary, ButtonOutline  } from './Button'
 const Hero = () => {
   return (
   <section
@@ -36,7 +36,13 @@ const Hero = () => {
                   icon="download"
                   />
 
-                  buttonOutline
+                   <ButtonOutline
+                  href="#about"
+                  label="scroll down"
+                  icon="arrow_downward"
+                  />
+
+                  
                 </div>
             </div>
           <div className="hidden lg:block">
